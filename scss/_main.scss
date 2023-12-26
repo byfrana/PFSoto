@@ -1,0 +1,227 @@
+/* Main */
+main {
+	margin-top: 80px;
+	padding-bottom: 120px;
+}
+
+/* intro */
+.intro {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	& &__title {
+		font-size: 12vw;
+		font-weight: 900;
+		text-align: center;
+		margin: -40px 0 0;
+		span {
+			display: block;
+			font-size: 4vw;
+			font-weight: 400;
+		}
+	}
+}
+
+@mixin gradient--text {
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#backgroundA .intro__title {
+	background: #6b6b83; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	@include gradient--text;
+}
+
+#bioIntro .intro__title {
+	background: #659999; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #cc8300, #659999); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #cc8300, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	@include gradient--text;
+}
+
+#duoIntro .intro__title {
+	background: #659982; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #ffba3e, #659982); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #ffba3e, #659982); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	@include gradient--text;
+}
+
+#interIntro .intro__title {
+	background: #7aeeff; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #7aeeff, #6b6b83, #aa4b6b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #7aeeff, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	@include gradient--text;
+}
+
+#discoIntro .intro__title {
+	background: #6b6b83; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	@include gradient--text;
+}
+
+/* section */
+.section {
+	background: $bgColor;
+	width: 100%;
+}
+.section--black {
+	background: $bgColor2;
+}
+.section--border {
+	border-top: 1px solid $bgColor2;
+}
+.section .section__title,
+.section .section__title--form,
+.section .section__title--play,
+.section .section__title--bio,
+.section .section__title--duo,
+.section .section__title--slide,
+.section .section__title--disco {
+	font-size: 4vw;
+	font-weight: 300;
+	line-height: 1.3;
+	margin-bottom: 50px;
+	color: $fontColor2;
+}
+
+.section .section__title--form,
+.section .section__title--play,
+.section .section__title--slide,
+.section .section__title--disco {
+	text-align: center;
+}
+.section .section__title--bio,
+.section .section__title--duo {
+	margin-bottom: 0;
+}
+.section .section__title--bio span {
+	font-weight: 900;
+	font-size: 18vw;
+	line-height: 1;
+	display: block;
+}
+.section .section__title--duo {
+	margin-top: 20px;
+}
+.section .section__title--slide {
+	color: $bgColor;
+}
+
+/* section slide */
+.section .section__form {
+	width: 350px;
+	margin: 0 auto;
+	text-align: left;
+	& label {
+		margin-bottom: 10px;
+	}
+	& input {
+		display: block;
+		padding: 10px 8px;
+		margin-bottom: 10px;
+		width: 100%;
+		&[type='checkbox'] {
+			display: inline-block;
+			width: 20px;
+		}
+		&[type='submit'] {
+			width: 150px;
+			margin: 20px auto;
+			text-transform: uppercase;
+			background: $bgColor2;
+			color: $bgColor;
+			border-color: $bgColor2;
+			transition: all 0.3s ease;
+			&:hover {
+				background: $bgColor;
+				color: $bgColor2;
+				border-color: $bgColor2;
+			}
+		}
+	}
+}
+
+/* section slide */
+.section .section__play {
+	display: block;
+	width: 350px;
+	margin: 0 auto;
+}
+
+/* section slide */
+.section .slide {
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+/* section grid */
+.section .section__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	column-gap: 30px;
+	row-gap: 30px;
+	.grid__item {
+		overflow: hidden;
+		a:hover img {
+			transform: scale(1.1);
+			filter: grayscale(1);
+			transition: all 0.3s ease;
+		}
+	}
+}
+
+/* para fondos fijos */
+
+@mixin bg--fixed {
+	height: 100vh;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+/* fondo fixed Index A */
+#backgroundA {
+	@include bg--fixed;
+	background-image: url(../img/bgA.jpg);
+}
+/* fondo fixed Index B */
+#backgroundB {
+	@include bg--fixed;
+	background-image: url(../img/bgB.jpg);
+}
+/* fondo fixed Index C */
+#backgroundC {
+	@include bg--fixed;
+	background-image: url(../img/bgC.jpg);
+}
+/* fondo fixed Biografia */
+#bioIntro {
+	@include bg--fixed;
+	background-image: url(../img/bioIntro.jpg);
+}
+/* fondo fixed Duo */
+#duoIntro {
+	@include bg--fixed;
+	background-image: url(../img/duoIntro.jpg);
+}
+/* fondo fixed Interestella */
+#interIntro {
+	@include bg--fixed;
+	background-image: url(../img/interestellar.avif);
+}
+/* fondo fixed discografia */
+#discoIntro {
+	@include bg--fixed;
+	background-image: url(../img/discoIntro.jpg);
+}
+
+/* para rows */
+.row--reverse {
+	display: flex;
+}

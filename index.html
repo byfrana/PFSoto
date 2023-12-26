@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <title>Daft Punk</title>
+  <meta name="description"
+    content="Website dedicado al dúo francés de música electrónica Daft Punk (1993 - 2021). Historia, biografía, discografía y su largometraje Interstella 5555">
+  <meta name="keywords" content="Daft Punk, dúo francés, música electrónica, Interstella">
+  <link rel="icon" href="./img/favicon/favicon.ico">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Style -->
+  <link rel="stylesheet" href="./scss/style.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header container-fluid">
+    <a class="header__logo" href="index.html"></a>
+    <nav class="header__menu">
+      <input type="checkbox" id="menu__mobile">
+      <span class="header__icon-open"></span>
+      <span class="header__icon-close"></span>
+      <ul>
+        <li><a class="header__link header__link--active" href="index.html">Inicio</a></li>
+        <li><a class="header__link" href="./pages/historia.html">Historia</a></li>
+        <li><a class="header__link" href="./pages/duo.html">Dúo</a></li>
+        <li><a class="header__link" href="./pages/interstella.html">Interstella</a></li>
+        <li><a class="header__link" href="./pages/discografia.html">Discografía</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main id="top">
+
+    <!-- Intro -->
+    <section id="backgroundA" class="intro bg--fixed">
+      <div class="container">
+        <h1 class="intro__title"><span>This is</span>Daft Punk</h1>
+      </div>
+    </section>
+
+    <!-- Texto 1 -->
+    <section class="section">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-6 col-md-4"></div>
+          <div class="col-lg-6 col-md-8 p-3 p-lg-5">
+            <h2 class="section__title">Daft Punk</h2>
+            <p>Daft Punk fue un dúo francés de música electrónica formado en 1993 en París por <strong>Thomas
+                Bangalter</strong> y
+              <strong>Guy-Manuel de Homem-Christo</strong>. Alcanzaron popularidad a fines de la década de 1990 como
+              parte del movimiento
+              house francés, combinando elementos de la música house con funk, disco, rock y pop. Obtuvieron elogios y
+              éxito comercial y son considerados como uno de los actos más influyentes en la música dance así como de la
+              música pop de los años 2010.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- fondo fijo B -->
+    <section id="backgroundB" class="section bg--fixed">
+    </section>
+
+    <!-- Texto 2 -->
+    <section class="section">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-6 col-md-8 p-3 p-lg-5">
+            <h2 class="section__title">Daft Punk</h2>
+            <p>Bangalter y Homem-Christo formaron Daft Punk después de que su banda de indie rock
+              <strong>Darlin'</strong> se disolviera
+              y comenzaran a experimentar con cajas de ritmos y sintetizadores. Su álbum de estudio debut,
+              <strong>Homework</strong>, fue
+              lanzado por Virgin Records en 1997 con críticas positivas, respaldado por los sencillos <strong>«Around
+                the World»</strong>
+              y <strong>«Da Funk»</strong>. A partir de 1999, Daft Punk asumió personajes de robots para apariciones
+              públicas, con
+              cascos, atuendos y guantes para disfrazar sus identidades; hicieron pocas apariciones en los medios.
+              Fueron administrados desde 1996 hasta 2008 por Pedro Winter, director de Ed Banger Records.
+            </p>
+          </div>
+          <div class="col-lg-6 col-md-4"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- fondo fijo C -->
+    <section id="backgroundC" class="section bg--fixed">
+    </section>
+
+    <!-- video -->
+    <section class="section section--black">
+      <div class="container">
+        <div class="row py-5">
+          <iframe frameborder="0" allowfullscreen="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            title="Daft Punk - Memory Tapes - Episode 5 - Todd Edwards (Official Video)" width="100%" height="400"
+            src="https://www.youtube.com/embed/0qpD-w7-DAE?controls=1&amp;iv_load_policy=3&amp;loop=0&amp;rel=0&amp;autoplay=0&amp;mute=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.daftpunk.com&amp;widgetid=3"
+            id="widget4" data-gtm-yt-inspected-8="true"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- formulario -->
+    <section class="section">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col">
+            <h2 class="section__title--form">Newsletter</h2>
+            <form class="section__form" action="" method="" enctype="text/plain">
+              <label for="name" required>Nombre</label>
+              <input type="text" id="fname" name="name" placeholder="Nombre">
+              <label for="mail" required>Email</label>
+              <input type="email" id="mail" name="mail" placeholder="Email">
+              <input type="checkbox" id="accept" name="accept">
+              <label for="accept">Acepto recibir Newsletters</label>
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container-fluid">
+    <div class="row pt-5 pb-5">
+      <div class="col">
+        <a href="#top" class="footer__top"><img src="./img/top.svg" alt="Volver arriba"></a>
+        <img class="footer__logo" src="./img/logo.svg" alt="Logo Daft Punk">
+        <ul class="footer__menu">
+          <li><a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="./img/fb.svg"
+                alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="./img/ig.svg"
+                alt="Instagram"></a></li>
+          <li><a href="https://twitter.com/home?lang=es" target="_blank" title="Twitter"><img src="./img/tw.svg"
+                alt="Twitter"></a></li>
+          <li><a href="https://www.tiktok.com/es/" target="_blank" title="TikTok"><img src="./img/tt.svg"
+                alt="TikTok"></a>
+          </li>
+          <li><a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="./img/yt.svg"
+                alt="Youtube"></a>
+          </li>
+          <li><a href="https://open.spotify.com/intl-es" target="_blank" title="Spotify"><img src="./img/sp.svg"
+                alt="Spotify"></a></li>
+        </ul>
+        <p class="footer__copy">Copyright 2023</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

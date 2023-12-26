@@ -1,0 +1,29 @@
+/* Reset */
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+:hover {
+	outline: 0;
+}
+
+iframe,
+img {
+	border: 0;
+}
+
+dl,
+ol,
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}

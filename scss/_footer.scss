@@ -1,0 +1,58 @@
+/* Footer */
+
+.footer {
+	position: relative;
+	text-align: center;
+	background: $bgColor2;
+	& &__top {
+		width: 40px;
+		height: 40px;
+		background: $bgColor;
+		color: $bgColor2;
+		border: 1px solid $bgColor2;
+		padding: 4px;
+		position: absolute;
+		bottom: 3rem;
+		right: 20px;
+		object-fit: contain;
+		img {
+			width: 30px;
+			height: 30px;
+			object-fit: contain;
+		}
+		&:hover {
+			filter: invert(100%);
+			transition: all 0.3s ease;
+		}
+	}
+	& &__logo {
+		width: 200px;
+		height: auto;
+		margin-bottom: 25px;
+	}
+	& &__menu {
+		display: flex;
+		justify-content: space-between;
+		align-content: center;
+		max-width: 300px;
+		margin: 0 auto;
+		li a {
+			display: block;
+			width: 30px;
+			height: 30px;
+			&:hover img {
+				transform: scale(1.2);
+				transition: all 0.3s ease;
+			}
+			& img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	& &__copy {
+		color: $bgColor;
+		font-size: 12px;
+		margin-top: 50px;
+	}
+}
