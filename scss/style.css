@@ -374,79 +374,70 @@ main {
 }
 
 /* para fondos fijos */
+.bg--fixed {
+  height: 100vh;
+  background-attachment: fixed;
+}
+
 /* fondo fixed Index A */
 #backgroundA {
-  height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
   background-image: url(../img/bgA.jpg);
 }
 
 /* fondo fixed Index B */
 #backgroundB {
-  height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
   background-image: url(../img/bgB.jpg);
 }
 
 /* fondo fixed Index C */
 #backgroundC {
-  height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
   background-image: url(../img/bgC.jpg);
 }
 
 /* fondo fixed Biografia */
 #bioIntro {
-  height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
   background-image: url(../img/bioIntro.jpg);
 }
 
 /* fondo fixed Duo */
 #duoIntro {
-  height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
   background-image: url(../img/duoIntro.jpg);
 }
 
 /* fondo fixed Interestella */
 #interIntro {
-  height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
   background-image: url(../img/interestellar.avif);
 }
 
 /* fondo fixed discografia */
 #discoIntro {
-  height: 100vh;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
   background-image: url(../img/discoIntro.jpg);
 }
@@ -531,7 +522,6 @@ main {
   }
   .bg--fixed {
     height: 35vh;
-    background-attachment: scroll;
   }
   .section .section__title,
   .section .section__title--form,
