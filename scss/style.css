@@ -385,6 +385,7 @@ main {
   text-align: center;
   margin: 0;
   color: #fff;
+  font-size: 24px;
 }
 .section .section__grid .grid__item:hover .grid__item-title {
   opacity: 1;
@@ -484,6 +485,9 @@ main {
     height: 50vh;
     background-attachment: scroll;
   }
+  .section .section__grid .grid__item .grid__item-title h3 {
+    font-size: 16px;
+  }
 }
 @media (max-width: 767px) {
   /* Header */
@@ -559,6 +563,9 @@ main {
     grid-template-rows: 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
+  }
+  .section .section__grid .grid__item .grid__item-title h3 {
+    font-size: 14px;
   }
 }
 @media (max-width: 375px) {
