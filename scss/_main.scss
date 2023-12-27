@@ -190,37 +190,37 @@ main {
 /* fondo fixed Index A */
 #backgroundA {
 	@include bg--fixed;
-	background-image: url(../img/bgA.jpg);
+	background-image: url(../img/bgA.webp);
 }
 /* fondo fixed Index B */
 #backgroundB {
 	@include bg--fixed;
-	background-image: url(../img/bgB.jpg);
+	background-image: url(../img/bgB.webp);
 }
 /* fondo fixed Index C */
 #backgroundC {
 	@include bg--fixed;
-	background-image: url(../img/bgC.jpg);
+	background-image: url(../img/bgC.webp);
 }
 /* fondo fixed Biografia */
 #bioIntro {
 	@include bg--fixed;
-	background-image: url(../img/bioIntro.jpg);
+	background-image: url(../img/bioIntro.webp);
 }
 /* fondo fixed Duo */
 #duoIntro {
 	@include bg--fixed;
-	background-image: url(../img/duoIntro.jpg);
+	background-image: url(../img/duoIntro.webp);
 }
 /* fondo fixed Interestella */
 #interIntro {
 	@include bg--fixed;
-	background-image: url(../img/interestellar.avif);
+	background-image: url(../img/interIntro.webp);
 }
 /* fondo fixed discografia */
 #discoIntro {
 	@include bg--fixed;
-	background-image: url(../img/discoIntro.jpg);
+	background-image: url(../img/discoIntro.webp);
 }
 
 /* para rows */

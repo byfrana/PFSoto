@@ -11,7 +11,7 @@
 	.intro .intro__title {
 		font-size: 14vw;
 	}
-	.intro .intro_title span {
+	.intro .intro__title span {
 		font-size: 6vw;
 	}
 	.bg--fixed {
@@ -40,7 +40,7 @@
 		width: 80%;
 		position: absolute;
 		padding: 0 20px;
-		transition: all 0.5s ease-out;
+		transition: all 0.3s ease-out;
 		top: 80px;
 		right: -767px;
 		text-align: right;
@@ -78,7 +78,7 @@
 	}
 
 	.bg--fixed {
-		height: 35vh;
+		height: 30vh;
 	}
 
 	.section .section__title,
