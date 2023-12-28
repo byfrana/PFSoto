@@ -168,6 +168,9 @@ main {
 	.grid__item {
 		overflow: hidden;
 		position: relative;
+		img {
+			transition: all 0.4s ease-in-out;
+		}
 		.grid__item-title {
 			display: flex;
 			align-items: center;
@@ -179,6 +182,7 @@ main {
 			top: 0;
 			left: 0;
 			opacity: 0;
+			transition: opacity 0.7s ease-in-out;
 			h3 {
 				width: 100%;
 				text-align: center;
@@ -189,11 +193,11 @@ main {
 		}
 		&:hover img {
 			transform: scale(2);
-			transition: all 0.5s ease-in-out;
+			transition: all 0.4s ease-in-out;
 		}
 		&:hover .grid__item-title {
 			opacity: 1;
-			transition: opacity 0.5s ease-in-out;
+			transition: opacity 0.7s ease-in-out;
 		}
 	}
 }

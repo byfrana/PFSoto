@@ -82,6 +82,7 @@ strong {
   z-index: 8;
   opacity: 0;
   transform: scale(1.5);
+  cursor: pointer;
 }
 .header .header__menu input, .header .header__menu .header__icon-open, .header .header__menu .header__icon-close {
   position: absolute;
@@ -368,6 +369,9 @@ main {
   overflow: hidden;
   position: relative;
 }
+.section .section__grid .grid__item img {
+  transition: all 0.4s ease-in-out;
+}
 .section .section__grid .grid__item .grid__item-title {
   display: flex;
   align-items: center;
@@ -379,6 +383,7 @@ main {
   top: 0;
   left: 0;
   opacity: 0;
+  transition: opacity 0.7s ease-in-out;
 }
 .section .section__grid .grid__item .grid__item-title h3 {
   width: 100%;
@@ -389,11 +394,11 @@ main {
 }
 .section .section__grid .grid__item:hover img {
   transform: scale(2);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .section .section__grid .grid__item:hover .grid__item-title {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.7s ease-in-out;
 }
 
 /* para fondos fijos */
